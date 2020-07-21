@@ -25,6 +25,7 @@ function gotResult(error, results) {
     console.error(error);
   } else {
     console.log(results);
-    document.getElementById("object_name").innerHTML = results[0].label;
+    document.getElementById("object_name").innerHTML = "Object : " + results[0].label;
+    document.getElementById("rate").innerHTML = "Accuracy : " + results[0].confidence;
   }
 }
